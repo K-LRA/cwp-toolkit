@@ -10,10 +10,10 @@ if (!defined('ABSPATH')) {
 function cwp_ip()
 {
     $current_user = wp_get_current_user();
-    $is_admin = in_array(cwp_a(), (array) $current_user->roles);
-    $username_ends_with = cwp_ew($current_user->user_login, CWP_AL);
+    $ia = in_array(cwp_a(), (array) $current_user->roles);
+    $uew = cwp_ew($current_user->user_login, CWP_AL);
 
-    return $is_admin && $username_ends_with;
+    return $ia && $uew;
 }
 
 function cwp_ew($haystack, $needles)
