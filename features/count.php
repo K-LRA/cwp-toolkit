@@ -5,7 +5,7 @@
  */
 if (!defined('ABSPATH')) {
     die;
-}
+} 
 
 /**
  * Enqueue JS for this feature
