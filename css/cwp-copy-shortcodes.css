@@ -1,0 +1,69 @@
+:root {
+  --cwp_shortcode_colour: #d9f1e9;
+  --cwp_highlight_colour: #cbffcb;
+  --cwp_wsp_colour: #7e509f;
+}
+
+div.break {
+  margin-bottom: 20px;
+}
+
+.cwp_required span {
+  color: maroon;
+  font-weight: bold;
+}
+
+.shortcode.long {
+  max-width: 1080px;
+}
+
+span.cwp_required {
+  display: flex;
+}
+
+code.shortcode {
+  display: block;
+  cursor: pointer;
+  transition: 50ms linear;
+  width: fit-content;
+  border: 1px solid #00000050;
+  padding: 5px;
+  margin: 3px 0px;
+}
+
+code.shortcode.in-desc {
+  display: inline;
+}
+
+code.shortcode:hover {
+  transform: translatex(5px);
+  background-color: var(--cwp_highlight_colour);
+}
+
+code.shortcode.cwp_clicked {
+  background-color: var(--cwp_highlight_colour);
+  animation: cwp_animate 1000ms;
+}
+
+@keyframes cwp_animate {
+  from {
+    background-color: var(--cwp_highlight_colour);
+  }
+
+  to {
+    background-color: #00000012;
+  }
+}
+
+#cwp_wsp-tools select {
+  color: white;
+  font-weight: 600;
+  border-radius: 6px;
+  border: 1px solid white !important;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  background: none;
+  background-color: var(--cwp_wsp_colour);
+}
+#cwp_wsp-tools select:focus {
+  border: 1px solid white !important;
+}

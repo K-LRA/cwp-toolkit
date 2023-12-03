@@ -1,0 +1,38 @@
+{
+    "name": "luizbills/wp-options-page",
+    "description": "Easy way to build options/settings pages in your WordPress plugins and themes.",
+    "keywords": ["wordpress", "options", "settings", "library"],
+    "homepage": "https://github.com/luizbills/wp-options-page",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Luiz Bills",
+            "email": "luizbills@pm.me",
+            "homepage": "https://www.luizpb.com/",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/luizbills/wp-options-page/issues",
+        "docs": "https://github.com/luizbills/wp-options-page/wiki"
+    },
+    "funding": [
+        {
+            "type": "donate",
+            "url": "https://www.luizpb.com/donate/"
+        }
+    ],
+    "autoload": {
+        "files": ["src/class-wp-options-page.php"]
+    },
+    "require": {
+        "php": ">=7.4"
+    },
+    "require-dev": {
+        "szepeviktor/phpstan-wordpress": "^1.1",
+        "phpstan/phpstan": "^1.10"
+    },
+    "scripts": {
+        "check": "phpstan analyse"
+    }
+}
